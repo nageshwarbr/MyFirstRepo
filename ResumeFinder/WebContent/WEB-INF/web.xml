@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ResumeFinder</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
+  <servlet-name>search</servlet-name>
+  <jsp-file>/SearchResume.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>search</servlet-name>
+  <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>upload</servlet-name>
+  <jsp-file>/UploadResume.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>upload</servlet-name>
+  <url-pattern>/Upload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>display</servlet-name>
+  <jsp-file>/DisplayDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>display</servlet-name>
+  <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
